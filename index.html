@@ -11,8 +11,159 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
+    <header class="header">
+        <div class="header__top">
+            <div class="wrapper">
+                <dif class="header__row">
+                    <a href="javascript:;" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                            
+                        <span>Интернет-магазин сантехники</span>                            
+                    </a>
 
+                    <a href="javascript:;" class="city">Санкт-Петербург</a>
+
+                    <nav class="nav">
+                        <a href="javascript:;" class="nav__link">О компании</a>
+                        <a href="javascript:;" class="nav__link">Магазины и контакты</a>
+                        <a href="javascript:;" class="nav__link">Оплата и доставка</a>
+                        <a href="javascript:;" class="nav__link">Сотрудничество</a>
+                    </nav>
+                </dif>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="wrapper">
+                <div class="header__row">
+                    <div class="catalog">
+                        <div class="catalog__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="catalog__text">Каталог товаров</div>
+                    </div>
+
+                    <div class="contacts">
+                        <div class="contacts__feedback">
+                            <a href="javascript:;" class="contacts__feedback-phone">8 950 226 88 22</a>
+                            <a href="javascript:;" class="contacts__feedback-link">Заказать обратный звонок</a>
+                        </div>
+                        <div class="contacts__schedule">
+                            <p>10:00 - 20:00</p>
+                            <p>Без выходных</p>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <div class="icons__item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.5112 37.155L28.1363 25.78C30.3397 23.0584 31.6663 19.6 31.6663 15.8334C31.6663 7.10336 24.563 0 15.8331 0C7.1032 0 0 7.10328 0 15.8333C0 24.5633 7.10328 31.6666 15.8332 31.6666C19.5998 31.6666 23.0581 30.34 25.7797 28.1366L37.1546 39.5116C37.4796 39.8366 37.9062 40 38.3329 40C38.7597 40 39.1863 39.8366 39.5113 39.5116C40.1629 38.86 40.1629 37.8066 39.5112 37.155ZM15.8332 28.3333C8.9399 28.3333 3.33332 22.7266 3.33332 15.8333C3.33332 8.93992 8.9399 3.33328 15.8332 3.33328C22.7265 3.33328 28.333 8.93992 28.333 15.8333C28.333 22.7266 22.7264 28.3333 15.8332 28.3333Z" fill="white"/>
+                            </svg>
+                            <p class="icons__item-text">Поиск</p>    
+                        </div>
+                        <div class="icons__item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8876 25.8597H12.8894C12.8909 25.8597 12.8925 25.8594 12.894 25.8594H34.1406C34.6637 25.8594 35.1236 25.5124 35.2673 25.0095L39.9548 8.60327C40.0558 8.24957 39.985 7.86932 39.7638 7.57574C39.5422 7.28217 39.1959 7.10944 38.8281 7.10944H10.1849L9.34723 3.3396C9.2279 2.80341 8.75244 2.42194 8.20312 2.42194H1.17187C0.524597 2.42194 0 2.94653 0 3.59381C0 4.24109 0.524597 4.76569 1.17187 4.76569H7.26318C7.4115 5.43372 11.272 22.8062 11.4941 23.8056C10.2487 24.347 9.375 25.5887 9.375 27.0313C9.375 28.9698 10.9521 30.5469 12.8906 30.5469H34.1406C34.7879 30.5469 35.3125 30.0223 35.3125 29.3751C35.3125 28.7278 34.7879 28.2032 34.1406 28.2032H12.8906C12.2446 28.2032 11.7187 27.6774 11.7187 27.0313C11.7187 26.3862 12.2427 25.8613 12.8876 25.8597ZM37.2745 9.45319L33.2565 23.5157H13.8306L10.7056 9.45319H37.2745Z" fill="white"/>
+                                <path d="M11.7188 34.0624C11.7188 36.0009 13.2959 37.578 15.2344 37.578C17.1729 37.578 18.75 36.0009 18.75 34.0624C18.75 32.1239 17.1729 30.5468 15.2344 30.5468C13.2959 30.5468 11.7188 32.1239 11.7188 34.0624ZM15.2344 32.8905C15.8804 32.8905 16.4062 33.4163 16.4062 34.0624C16.4062 34.7084 15.8804 35.2343 15.2344 35.2343C14.5883 35.2343 14.0625 34.7084 14.0625 34.0624C14.0625 33.4163 14.5883 32.8905 15.2344 32.8905Z" fill="white"/>
+                                <path d="M28.2812 34.0624C28.2812 36.0009 29.8584 37.578 31.7969 37.578C33.7354 37.578 35.3125 36.0009 35.3125 34.0624C35.3125 32.1239 33.7354 30.5468 31.7969 30.5468C29.8584 30.5468 28.2812 32.1239 28.2812 34.0624ZM31.7969 32.8905C32.4429 32.8905 32.9688 33.4163 32.9688 34.0624C32.9688 34.7084 32.4429 35.2343 31.7969 35.2343C31.1508 35.2343 30.625 34.7084 30.625 34.0624C30.625 33.4163 31.1508 32.8905 31.7969 32.8905Z" fill="white"/>
+                            </svg>
+                                
+                                
+                            <p class="icons__item-text">23 500 ₽</p>    
+                        </div>
+                        <div class="icons__item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M15.0011 19.1672C10.4063 19.1672 6.66797 15.4292 6.66797 10.8343C6.66797 6.23945 10.4063 2.50116 15.0011 2.50116C19.596 2.50116 23.3343 6.23945 23.3343 10.8343C23.3343 15.4292 19.596 19.1672 15.0011 19.1672ZM15.0011 5.00108C11.7847 5.00108 9.16789 7.61758 9.16789 10.8343C9.16789 14.0508 11.7847 16.6673 15.0011 16.6673C18.2176 16.6673 20.8344 14.0508 20.8344 10.8343C20.8344 7.61758 18.2176 5.00108 15.0011 5.00108Z" fill="white"/>
+                                <path d="M28.7491 37.5001H1.24996C0.55998 37.5001 0 36.9401 0 36.2501V30.4169C0 26.0521 3.55152 22.5005 7.91632 22.5005H22.0827C26.4475 22.5005 29.9991 26.0521 29.9991 30.4169V36.2501C29.9991 36.9401 29.4391 37.5001 28.7491 37.5001ZM2.49992 35.0002H27.4991V30.4169C27.4991 27.4305 25.0691 25.0005 22.0827 25.0005H7.91632C4.92996 25.0005 2.49992 27.4305 2.49992 30.4169V35.0002Z" fill="white"/>
+                                <path d="M38.7481 19.584H24.582C23.892 19.584 23.332 19.0241 23.332 18.3341C23.332 17.6441 23.892 17.0841 24.582 17.0841H38.7481C39.4381 17.0841 39.9981 17.6441 39.9981 18.3341C39.9981 19.0241 39.4381 19.584 38.7481 19.584Z" fill="white"/>
+                                <path d="M32.0817 26.2504C31.7616 26.2504 31.4418 26.1287 31.1982 25.8839C30.71 25.3954 30.71 24.6038 31.1982 24.1155L36.9814 18.3323L31.1982 12.5491C30.71 12.0608 30.71 11.2692 31.1982 10.7809C31.6865 10.2927 32.4781 10.2927 32.9667 10.7809L39.633 17.4473C40.1213 17.9356 40.1213 18.7275 39.633 19.2157L32.9667 25.8821C32.7216 26.1287 32.4015 26.2504 32.0817 26.2504Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="40" height="40" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                            <p class="icons__item-text">Личный кабинет</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <div class="intro">
+        <div class="wrapper">
+            <div class="slider">
+                <div class="slider__item" style="background-image: url(img/slider1.png);">
+                    <div class="slider__item-wrap">
+                        <h2 class="slider__item-title">Врезка гидромассажей по самой привлекательной цене в СПБ</h2>
+                        <a href="javascript:;" class="slider__item-link purple-btn">Смотреть каталог</a>
+                    </div>
+                    
+                </div>
+
+                <div class="slider__item" style="background-image: url(img/slider1.png);">
+                    <div class="slider__item-wrap">
+                        <h2 class="slider__item-title">Врезка гидромассажей по самой привлекательной цене в СПБ</h2>
+                        <a href="javascript:;" class="slider__item-link purple-btn">Смотреть каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular">
+        <div class="wrapper">
+            <h2 class="block-title line">Популярные категории</h2>
+
+            <div class="popular__wrap">
+                <a href="javascript:;" class="item">
+                    <img src="img/popular1.png" alt="">
+                    <span class="item__text">Сантехника</span>
+                </a>
+                <a href="javascript:;" class="item">
+                    <img src="img/popular2.png" alt="">
+                    <span class="item__text">Мебель для ванной</span>
+                </a>
+                <a href="javascript:;" class="item">
+                    <img src="img/popular3.png" alt="">
+                    <span class="item__text">Аксессуары для ванной</span>
+                </a>
+                <a href="javascript:;" class="item">
+                    <img src="img/popular4.png" alt="">
+                    <span class="item__text">Плитка</span>
+                </a>
+                <a href="javascript:;" class="item">
+                    <img src="img/popular1.png" alt="">
+                    <span class="item__text">Мебель для ванной</span>
+                </a>
+            </div>
+
+            <a href="javascript:;" class="popular__link purple-btn">Смотреть весь каталог</a>
+        </div>
+    </div>
+
+    <div class="sale">
+        <div class="wrapper">
+            <h2 class="block-title line">Скидки недели</h2>
+
+            <div class="sale__wrap">
+
+            </div>
+
+            <a href="javascript:;" class="sale__link purple-btn">Вся сантехника со скидкой</a>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+    </footer>
     
 
 <script src="js/libs/jquery-3.2.1.min.js"></script>
