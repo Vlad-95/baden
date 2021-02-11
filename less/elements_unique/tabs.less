@@ -1,0 +1,27 @@
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px 35px;
+
+    &__item {
+        color: rgba(147,147,147,1);
+        border: 1px solid rgba(147,147,147,1);
+        border-radius: 2px;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc((100%/4) - 20px);
+        height: 72px;
+        text-align: center;
+
+        &.active {
+            border-color: @lightPurple;
+            color: @lightPurple;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+}

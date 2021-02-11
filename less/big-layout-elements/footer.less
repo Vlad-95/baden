@@ -1,0 +1,133 @@
+.footer {
+    background-color: @black;
+    padding: 40px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 184px;
+        }
+
+        span {
+            margin-left: 15px;
+            font-size: 16px;
+            max-width: 155px;
+            color: @white;
+        }
+    }
+
+    .list {
+        color: @white;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &__item {
+            
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 25px;
+            line-height: 1;
+
+            
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:first-of-type {
+                font-family: @elmessiri;
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        color: @white;
+        p {
+            margin: 0 0 38px;
+            font-family: @elmessiri;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        &__link {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 39px;
+            position: relative;
+            padding-left: 50px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &.mail {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 30px;
+                    height: 21px;
+                    background-image: url(../img/icons/footer-mail.svg);
+                }
+            }
+
+            &.phone {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 28px;
+                    height: 28px;
+                    background-image: url(../img/icons/footer-phone.svg);
+                }
+            }
+
+            &.inst {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 29px;
+                    height: 29px;
+                    background-image: url(../img/icons/footer-inst.svg);
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    border-top: 1px solid #939393;
+    background-color: @black;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: @white;
+    }
+}

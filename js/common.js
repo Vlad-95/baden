@@ -1,6 +1,14 @@
 $(document).ready(function() {
-    $('.slider').slick({
+    $('.intro .slider').slick({
         dots: true,
         arrows: true
     });
+
+    $('.sale .slider').slick({
+        slidesToShow: 4,
+        dots: false,
+        
+    });
+
+
 })
