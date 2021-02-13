@@ -1,6 +1,6 @@
 .footer {
     background-color: @black;
-    padding: 40px 0;
+    padding: 40px 0 32px;
 
     &__wrap {
         display: flex;
@@ -11,6 +11,7 @@
     &__logo {
         display: flex;
         align-items: center;
+        margin-top: 10px;
 
         img {
             max-width: 184px;
@@ -21,6 +22,7 @@
             font-size: 16px;
             max-width: 155px;
             color: @white;
+            color: 1.2;
         }
     }
 
@@ -33,7 +35,7 @@
             
             font-size: 22px;
             font-weight: 400;
-            margin-bottom: 25px;
+            margin-bottom: 27px;
             line-height: 1;
 
             
@@ -45,7 +47,7 @@
                 font-family: @elmessiri;
                 font-size: 35px;
                 font-weight: 600;
-                margin-bottom: 32px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -118,8 +120,9 @@
 }
 
 .copyright {
-    border-top: 1px solid #939393;
+    border-top: 1px solid rgba(147,147,147,0.5);
     background-color: @black;
+    padding: 22px 0;
 
     &__wrap {
         display: flex;
@@ -129,5 +132,28 @@
     &__text {
         font-size: 16px;
         color: @white;
+        margin: 0;
+    }
+
+    .icons {
+        display: flex;
+        margin-left: auto;
+
+        &__item {
+            text-align: center;
+
+            &:not(:first-of-type) {
+                margin-left: 55px;
+            }
+
+            svg {
+                height: 32px;
+                margin-bottom: 5px;
+            }
+            p {
+                margin: 0;
+                color: rgba(147,147,147,0.5);
+            }
+        }
     }
 }

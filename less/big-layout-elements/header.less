@@ -7,6 +7,7 @@
 
     &__top {
         background-color: @white;
+        padding: 35px 0 34px;
     }
 
     &__bottom {
@@ -25,6 +26,7 @@
         span {
             margin-left: 15px;
             font-size: 16px;
+            line-height: 1.2;
             max-width: 155px;
         }
     }
@@ -66,8 +68,9 @@
         display: flex;
         align-items: center;
         background-color: @white;
-        padding: 24px 46px;
+        padding: 23px 47px;
         border-radius: 2px;
+        margin-right: 42px;
 
         &__burger {
             width: 50px;
@@ -109,12 +112,14 @@
         &__feedback {
             display: flex;
             flex-direction: column;
+            margin-right: 20px;
         }
 
         &__feedback-phone {
             color: @white;
             font-size: 25px;
             font-weight: 600;
+            margin-bottom: 14px;
         }
 
         &__feedback-link {
@@ -130,6 +135,10 @@
                 font-size: 16px;
                 font-weight: 400;
                 margin: 0;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 17px;
+                }
             }
         }
     }
