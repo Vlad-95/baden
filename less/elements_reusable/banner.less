@@ -1,0 +1,46 @@
+.banner {
+    max-width: 1426px;
+    margin: 0 auto;
+    border: 1px solid @purple;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 37px 82px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 8px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 214px;
+        height: 190px;
+        background-image: url(../img/banner-lines.png);
+    }
+
+    &__img {
+        width: 128px;
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+
+        }
+    }
+
+    &__content {
+        padding-left: 90px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 35px;
+        color: @purple;
+        font-family: @elmessiri;
+        margin: 0;
+    }
+}
