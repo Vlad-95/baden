@@ -1,4 +1,27 @@
 .pay {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 0px;
+        left: 21px;
+        content: '';
+        width: 538px;
+        height: 437px;
+        background-image: url(../img/lines-bg-left.png);
+        pointer-events: none;
+    }
+
+    &:after {
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        content: '';
+        width: 538px;
+        height: 478px;
+        background-image: url(../img/lines-bg-right.png);
+        pointer-events: none;
+    }
     &__wrap {
         max-width: 930px;
         margin: 0 auto;
@@ -78,4 +101,27 @@
             margin-left: 70px;
         }
     }
+
+    &_success {
+        padding-bottom: 165px;
+     
+        .pay__title {
+            margin: 163px 0 39px;
+            font-size: 70px;
+        }
+
+        .pay__text {
+            margin: 0 0 52px;
+        }
+
+        .pay__link {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 265px;
+            padding: 23px 0;
+            border-radius: 2px;
+        }
+    }
+
 }
