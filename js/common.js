@@ -33,10 +33,33 @@ $(document).ready(function() {
         focusOnSelect: true,
         nextArrow: '<div class="arrow-gray arrow-gray_bottom"><svg width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5702 20.5569L38.559 2.572C39.148 1.98275 39.147 1.02873 38.5559 0.440462C37.9649 -0.14735 37.0075 -0.145831 36.418 0.4435L19.4999 17.3579L2.58191 0.442891C1.99234 -0.146365 1.03555 -0.147883 0.444462 0.439853C0.148155 0.734747 -4.9004e-08 1.12108 -6.5891e-08 1.50741C-8.27349e-08 1.89275 0.147167 2.27756 0.441418 2.57193L18.4297 20.5569C18.7129 20.8407 19.0983 21 19.4999 21C19.9015 21 20.2865 20.8403 20.5702 20.5569Z" fill="#939393"/></svg></div>',
         prevArrow: '<div class="arrow-gray arrow-gray_top"><svg width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5702 20.5569L38.559 2.572C39.148 1.98275 39.147 1.02873 38.5559 0.440462C37.9649 -0.14735 37.0075 -0.145831 36.418 0.4435L19.4999 17.3579L2.58191 0.442891C1.99234 -0.146365 1.03555 -0.147883 0.444462 0.439853C0.148155 0.734747 -4.9004e-08 1.12108 -6.5891e-08 1.50741C-8.27349e-08 1.89275 0.147167 2.27756 0.441418 2.57193L18.4297 20.5569C18.7129 20.8407 19.0983 21 19.4999 21C19.9015 21 20.2865 20.8403 20.5702 20.5569Z" fill="#939393"/></svg></div>',
+    });
 
+
+    //переключение способа оплаты в корзине
+    const deliveryType = $('.radio[name=delivery1]');
+    const deliveryTypeContent = $('.form__delivery');
+
+    deliveryType.click(function() {
+        let checked = $(this).is(':checked');
+        let checkedId = $(this).attr('id');
         
+        
+        if (checked) {
+            deliveryTypeContent.each(function() {
+                if(checkedId === "deliveryCheck") {
+                    deliveryTypeContent.removeClass('active');
 
+                    $('.form__delivery#delivery').addClass('active');
 
+                } else if(checkedId === "pickupCheck") {
+                    deliveryTypeContent.removeClass('active');
+
+                    $('.form__delivery#pickup').addClass('active');
+                }
+                
+                
+            })
+        } 
     })
-
 })

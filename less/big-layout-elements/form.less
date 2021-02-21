@@ -64,9 +64,47 @@
         }
     }
 
+    &__title {
+        font-weight: 600;
+        font-size: 35px;
+        color: @purple;
+        font-family: @elmessiri;
+        margin: 29px 0 24px;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+
+        &_two {
+            div {
+                width: 50%;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+        &_four {
+            div {
+                width: 25%;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+        &_radio {
+            &>div {
+                
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+
     &__input {
+        margin-bottom: 17px;
         p {
-            margin: 0 0 18px;
+            margin: 0 0 12px;
             font-size: 22px;
             color: #939393;
         }
@@ -104,6 +142,102 @@
         }
     }
 
+    &__radio {
+
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+        .label {
+            position: relative;
+        }
+
+        .radio {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+
+            &:checked + .text {
+                color: @purple;
+                &:before {
+                    border-color: @purple;
+                }
+            }
+        }
+
+        .text {
+            position: relative;
+            font-size: 22px;
+            color: #939393;
+            padding-left: 51px;
+            transition: 0.3s;
+            line-height: 40px;
+            white-space: nowrap;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -2px;
+                width: 38px;
+                height: 38px;
+                border: 1px solid #939393;
+                border-radius: 3px;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__checkbox {
+        .label {
+            position: relative;
+        }
+
+        .checkbox {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+
+            &:checked + .text {
+                color: @purple;
+                &:before {
+                    border-color: @purple;
+                }
+            }
+        }
+
+        .text {
+            position: relative;
+            font-size: 22px;
+            color: #939393;
+            padding-left: 51px;
+            transition: 0.3s;
+            line-height: 40px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -2px;
+                width: 38px;
+                height: 38px;
+                border: 1px solid #939393;
+                border-radius: 3px;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__textarea {
+        .textarea {
+            width: 100%;
+            height: 133px;
+            border: 1px solid @purple;
+            border-radius: 3px;
+            background-color: @white;
+            padding: 21px 27px;
+        }
+    }
+
     &__submit-row {
         margin-top: 30px;
         &.center {
@@ -130,5 +264,13 @@
         color: #939393;
         max-width: 318px;
         margin: 19px auto 0;
+    }
+
+    &__delivery {
+        display: none;
+
+        &.active {
+            display: block;
+        }
     }
 }
