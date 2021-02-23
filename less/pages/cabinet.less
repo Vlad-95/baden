@@ -1,0 +1,143 @@
+.cabinet {
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 3px;
+    }
+
+    .content {
+        width: 66%;
+        border: 1px solid #939393;
+        border-radius: 3px;
+        padding: 15px 282px 30px 71px;
+    }
+
+    .orders {
+        width: 32%;
+        border: 1px solid #939393;
+        border-radius: 3px;
+        padding: 38px 55px;
+
+        &__title {
+            font-weight: 600;
+            font-size: 35px;
+            color: @purple;
+            font-family: @elmessiri;
+            margin: 0 0 43px;
+        }
+
+        &__cont {
+            padding: 0 26px;
+        }
+
+        &__item {
+            border: 1px solid #CBCACA;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+        
+        &__number {
+            font-weight: 600;
+            font-size: 25px;
+            margin: 0;
+            border-bottom: 1px solid #CBCACA;
+            padding: 23px 20px;
+        }
+
+        &__prod-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 24px 19px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 12%;
+                bottom: 0;
+                width: 76%;
+                height: 1px;
+                background-color: #CBCACA;
+            }
+            
+
+            &:last-of-type {
+                &:after {
+                    display: none;
+                }
+                
+            }
+        }
+
+        &__img {
+            position: relative;
+            width: 82px;
+            height: 82px;
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+        }
+
+        &__content {
+            margin-left: 15px;
+        }
+
+        &__name {
+            font-weight: 600;
+            font-size: 25px;
+            color: @purple;
+            margin: 11px 0 18px;
+        }
+        &__cat {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        &__submit-row {
+            border-top: 1px solid #CBCACA;
+            text-align: center;
+            padding-bottom: 31px;
+        }
+
+        &__price {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 35px 28px 19px;
+
+            &-text {
+                font-size: 22px;
+                margin: 0;
+            }
+        }
+
+        &__new-price {
+            font-weight: 600;
+            font-size: 25px;
+            color: @purple;
+            
+        }
+
+        &__submit {
+            border: 1px solid @purple;
+            padding: 0 18px;
+            height: 72px;
+            width: 264px;
+            text-align: center;
+            border-radius: 2px;
+            display: inline-block;
+            line-height: 72px;
+        }
+    }
+}

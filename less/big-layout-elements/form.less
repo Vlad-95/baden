@@ -70,6 +70,10 @@
         color: @purple;
         font-family: @elmessiri;
         margin: 29px 0 24px;
+
+        &_underline {
+            text-decoration: underline;
+        }
     }
 
     &__row {
@@ -92,6 +96,14 @@
             }
         }
 
+        &_three {
+            div {
+                width: calc(100% / 3);
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
         &_radio {
             &>div {
                 
@@ -99,6 +111,10 @@
                 margin-right: 15px;
             }
         }
+    }
+
+    .change-psw {
+        border-top: 1px solid #939393;
     }
 
     &__input {
@@ -251,6 +267,8 @@
         font-weight: 600;
         font-size: 25px;
         border: 1px solid @purple;
+        width: 264px;
+        height: 72px;
 
         &_payment {
             margin: 0 auto;
@@ -272,5 +290,9 @@
         &.active {
             display: block;
         }
+    }
+
+    .change-psw {
+        margin-top: 35px;
     }
 }
